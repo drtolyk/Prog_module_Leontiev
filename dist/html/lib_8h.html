@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Програмування: Файл src/lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Програмування
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Модульний контроль</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макровизначення</a> &#124;
+<a href="#func-members">Функції</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Файл з оголошеннями функцій для обчислення арифметичних виразів  
+<a href="#details">Детальніше...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Діаграма включених заголовочних файлів для lib.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib_8h__incl.png" border="0" usemap="#asrc_2lib_8h" alt=""/></div>
+</div>
+</div>
+<p><a href="lib_8h_source.html">Див. вихідні тексти.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макровизначення</h2></td></tr>
+<tr class="memitem:ae578f534cf9d94096d1f880e22195973"><td class="memItemLeft" align="right" valign="top"><a id="ae578f534cf9d94096d1f880e22195973"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib_8h.html#ae578f534cf9d94096d1f880e22195973">MAX_EXPR_LEN</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:ae578f534cf9d94096d1f880e22195973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальна довжина виразу <br /></td></tr>
+<tr class="separator:ae578f534cf9d94096d1f880e22195973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функції</h2></td></tr>
+<tr class="memitem:a926b64b87b4b9da476d07faecbf12b21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib_8h.html#a926b64b87b4b9da476d07faecbf12b21">priority</a> (char c)</td></tr>
+<tr class="memdesc:a926b64b87b4b9da476d07faecbf12b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Визначення приорітета для математичних знаків  <a href="lib_8h.html#a926b64b87b4b9da476d07faecbf12b21">Детальніше...</a><br /></td></tr>
+<tr class="separator:a926b64b87b4b9da476d07faecbf12b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330c41e9542725ff307871c99e3362b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib_8h.html#a330c41e9542725ff307871c99e3362b4">calculate_sub_expression</a> (int num1, int num2, char op)</td></tr>
+<tr class="memdesc:a330c41e9542725ff307871c99e3362b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює результат виразу, що складається з двох чисел та оператора  <a href="lib_8h.html#a330c41e9542725ff307871c99e3362b4">Детальніше...</a><br /></td></tr>
+<tr class="separator:a330c41e9542725ff307871c99e3362b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e6326b567b578e4ed1bc1a22cae5c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib_8h.html#a02e6326b567b578e4ed1bc1a22cae5c1">calculate</a> (char *expression)</td></tr>
+<tr class="memdesc:a02e6326b567b578e4ed1bc1a22cae5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює результат арифметичного виразу  <a href="lib_8h.html#a02e6326b567b578e4ed1bc1a22cae5c1">Детальніше...</a><br /></td></tr>
+<tr class="separator:a02e6326b567b578e4ed1bc1a22cae5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Файл з оголошеннями функцій для обчислення арифметичних виразів </p>
+</div><h2 class="groupheader">Опис функцій</h2>
+<a id="a02e6326b567b578e4ed1bc1a22cae5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e6326b567b578e4ed1bc1a22cae5c1">&#9670;&nbsp;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int calculate </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>expression</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює результат арифметичного виразу </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expression</td><td>Арифметичний вираз для обчислення</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обчислює результат арифметичного виразу</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expression</td><td>Рядок з арифметичним виразом </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Результат обчислення виразу </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib_8h_a02e6326b567b578e4ed1bc1a22cae5c1_cgraph.png" border="0" usemap="#alib_8h_a02e6326b567b578e4ed1bc1a22cae5c1_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a330c41e9542725ff307871c99e3362b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330c41e9542725ff307871c99e3362b4">&#9670;&nbsp;</a></span>calculate_sub_expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int calculate_sub_expression </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює результат виразу, що складається з двох чисел та оператора </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num1</td><td>Перше число у виразі </td></tr>
+    <tr><td class="paramname">num2</td><td>Друге число у виразі </td></tr>
+    <tr><td class="paramname">op</td><td>Оператор у висловленні</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обчислює результат виразу, що складається з двох чисел та оператора</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num1</td><td>Перше число </td></tr>
+    <tr><td class="paramname">num2</td><td>Друге число </td></tr>
+    <tr><td class="paramname">op</td><td>Оператор (+, -, *, /, %, ^) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>result Результат обчислення підвиразу </dd></dl>
+
+</div>
+</div>
+<a id="a926b64b87b4b9da476d07faecbf12b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926b64b87b4b9da476d07faecbf12b21">&#9670;&nbsp;</a></span>priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int priority </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Визначення приорітета для математичних знаків </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Оператор для определения приоритета</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Визначення приорітета для математичних знаків</p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Символ оператора </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Приорітет оператора (1 - самий низький, 3 - самий высокий), або -1, если символ не являється оператором </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
